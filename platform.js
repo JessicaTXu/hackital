@@ -2,12 +2,12 @@ var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload:
 
 function preload() {
 
-    game.load.tilemap('level1', 'assets/games/level1.json', null, Phaser.Tilemap.TILED_JSON);
-    game.load.image('tiles-1', 'assets/games/tiles-1.png');
+   // game.load.tilemap('level1', 'assets/games/level1.json', null, Phaser.Tilemap.TILED_JSON);
+    game.load.image('tiles-1', 'assets/games/tiles.png');
     game.load.spritesheet('dude', 'assets/games/dude.png', 32, 48);
-    game.load.spritesheet('droid', 'assets/games/droid.png', 32, 32);
-    game.load.image('starSmall', 'assets/games/star.png');
-    game.load.image('starBig', 'assets/games/star2.png');
+   // game.load.spritesheet('droid', 'assets/games/droid.png', 32, 32);
+   // game.load.image('starSmall', 'assets/games/star.png');
+   // game.load.image('starBig', 'assets/games/star2.png');
     game.load.image('background', 'assets/games/background.jpg');
 
 }
@@ -31,9 +31,9 @@ function create() {
     bg = game.add.tileSprite(0, 0, 800, 600, 'background');
     bg.fixedToCamera = true;
 
-    map = game.add.tilemap('level1');
+  //  map = game.add.tilemap('level1');
 
-    map.addTilesetImage('tiles-1');
+ //   map.addTilesetImage('tiles-1');
 
     map.setCollisionByExclusion([ 13, 14, 15, 16, 46, 47, 48, 49, 50, 51 ]);
 
