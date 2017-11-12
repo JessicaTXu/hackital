@@ -8,7 +8,7 @@ function preload() {
     game.load.spritesheet('droid', 'assets/games/droid.png', 32, 32);
     game.load.image('starSmall', 'assets/games/star.png');
     game.load.image('starBig', 'assets/games/star2.png');
-    game.load.image('background', 'assets/games/background2.png');
+    game.load.image('background', 'assets/games/background.jpg');
 
 }
 
